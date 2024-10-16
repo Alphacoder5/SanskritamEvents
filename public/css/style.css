@@ -1,0 +1,217 @@
+/* Basic Reset */
+* {
+  margin: 300;
+  padding: 300;
+  box-sizing: border-box;
+}
+
+/* Apply bold text globally */
+body {
+  background: linear-gradient(to right, #e0b2e0, #f18ebc); /* A linear gradient background */
+  margin: 0;
+  height: 1;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #04272c;
+  color: #85f39d;
+  padding: 1% 15px;
+  position: -ms-page;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  transition: background 1s ease;
+}
+
+header.sticky {
+  background: rgba(196, 106, 106, 0.95);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo img {
+  width: 250px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #a36b10;
+}
+
+/* Main content styling */
+main {
+  margin-top: 80px;
+}
+
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section h1, .section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.section p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+ul {
+  text-align: center;
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Button Styling */
+.cta-button a {
+  background-color: #65a6fa;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+
+.cta-button a:hover {
+  background-color: #e67e22;
+}
+
+/* Partner Logos - Adjust logo size and maintain aspect ratio */
+.partners-logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px; /* Space between logos */
+  margin-top: 30px;
+}
+
+.partners-logos img {
+  width: auto; /* Maintain aspect ratio */
+  height: 80px; /* Set a fixed height */
+  object-fit: contain; /* Ensure logo scales properly */
+  transition: transform 0.3s ease;
+}
+
+.partners-logos img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Contact Info Styling */
+.contact-info {
+  text-align: center;
+  line-height: 1.8;
+  color: #6c93db;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #5e43d8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #f39c12;
+}
+
+.contact-info strong {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #f39c12;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e67e22;
+}
+
+.owners-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0; /* Space between the sections */
+  gap: 50px; /* Space between the owners */
+}
+
+.owner {
+  text-align: center;
+}
+
+.owner img {
+  width: 150px; /* Circle image size */
+  height: 150px;
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle properly */
+  border: 3px solid #333; /* Optional border for the circle */
+}
+
+.owner h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.owner p {
+  font-size: 16px;
+  color: #666;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .partners-logos {
+    justify-content: center;
+    gap: 10px;
+  }
+}
